@@ -1,0 +1,4 @@
+Name: MyOwnRobs
+Description: Open MyOwnRobs chat interface
+Binding: myownrobs
+Interactive: true
