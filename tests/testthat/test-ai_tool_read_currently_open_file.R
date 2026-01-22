@@ -4,7 +4,7 @@ test_that("read_currently_open_file - no file open", {
     .package = "myownrobs"
   )
   expect_equal(
-    read_currently_open_file(list()),
+    read_currently_open_file(),
     list(filepath = "NO CURRENT FILE", content = "There are no files currently open.")
   )
 })
@@ -15,7 +15,7 @@ test_that("read_currently_open_file - file open", {
     .package = "myownrobs"
   )
   expect_equal(
-    read_currently_open_file(list()),
+    read_currently_open_file(),
     list(filepath = "ACTIVE_R_DOCUMENT", content = "CONTENT")
   )
 })
